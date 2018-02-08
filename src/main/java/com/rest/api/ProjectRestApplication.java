@@ -9,13 +9,15 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class ProjectRestApplication {
 
-	@Value("$paginacao.qtd_por_pagina")
+//	@Value("$paginacao.qtd_por_pagina")
 	private int qtdPorPagina;
 	
 	
 	public static void main(String[] args) {
+		
 		SpringApplication.run(ProjectRestApplication.class, args);
 		System.out.println("Hello World");
+	
 	}
 	
 	@Bean
